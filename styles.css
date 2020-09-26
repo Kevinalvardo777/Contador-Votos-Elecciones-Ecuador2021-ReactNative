@@ -1,0 +1,58 @@
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 60%;
+    margin: auto;
+    background-color: skyblue;
+    font-size: 60px;
+}
+
+.votaciones {
+    color: midnightblue
+}
+
+button {
+    background-color: white;
+    border: none;
+    width: 50px;
+    height: 30px;
+    margin-bottom: 0%;
+    cursor: pointer;
+    border: 2px solid gray;
+}
+
+.reset {
+    width: 100px;
+    height: 40px;
+    background-color: darkslategrey;
+    color: cornsilk;
+    margin-top: 20px;
+    font-size: 20px;
+    
+}
+
+.image {
+    height: 18%;
+    width: 17%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
