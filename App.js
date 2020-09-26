@@ -29,16 +29,23 @@ export default function App() {
         }}
       />
       <View style={styles.wrapper}>
-        <button
-          onClick={restar}
+        <View style={styles.buttonStyle}>
+          <Button
+            onPress={restar}
+            title="     -     "
+            style={styles.buttonProperty}
+          >-</Button>
+          <Text style={{ fontSize: 50, fontWeight: 'bold', color: '#154360'}}>{value}</Text>
+          <Button
+            onPress={sumar}
+            title="     +     "
+            style={styles.buttonProperty}
+          >   +   </Button>
           
-        >-</button>
-        <View>{value}</View>
-        <button
-          onClick={sumar}
-          color="white"
-        >+</button>
-      </View>
+        </View>
+        
+      </View>  
+      <Button onPress={resetear} title="Reiniciar" style={{ paddingTop: 20}}>Reiniciar</Button>
     </View>
   );
 }
@@ -48,38 +55,59 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
+    
   },
+  buttonStyle: {
+    marginHorizontal: 30,
+    width: 260,
+    marginTop: 5, 
+    flexDirection: 'row', 
+    justifyContent: 'space-around',
+    alignItems: 'center',
+  },
+  buttonProperty: {
+    width:"100%", 
+    marginHorizontal: 60
+  },
+  btnSize: {
+    width: '100%'
+  }, 
   votaciones: {
-    color: 'midnightblue', 
+    color: '#154360', 
     fontWeight: 'bold', 
-    fontSize: '20px'
+    fontSize: 20, 
+    marginTop: 40
   },
   button: {
-    backGroundColor: 'white'
+    backgroundColor: 'white'
   },
   app: {
     fontFamily: 'sans serif',
     textAlign: 'center',
-    fontSize: '25px'
+    fontSize: 25
   }, 
   image: {
-    height: '450px',
-    width: '250px',
-    marginTop: '20px',
-    marginBottom: '20px'
+    height: 370,
+    width: 250,
+    marginTop: 20,
+    marginBottom: 20
   },
   wrapper: {
     display: 'flex',
     justifyContent: 'space-around',
+    marginBottom: 10,
     alignItems: 'center',
-    height: '100px',
-    width: '80%',
+    height: 100,
+    width: 250,
     margin: 'auto',
     backgroundColor: 'skyblue',
-    fontSize: '60px', 
+    fontSize: 60, 
     flexDirection: 'row'
     
+  }, 
+  reset: {
+    marginTop: 80,
   }
 
 });
