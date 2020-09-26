@@ -30,12 +30,12 @@ export default function App() {
       />
       <View style={styles.wrapper}>
         <button
-          onPress={restar}
+          onClick={restar}
           
         >-</button>
         <View>{value}</View>
         <button
-          onPress={sumar}
+          onClick={sumar}
           color="white"
         >+</button>
       </View>
